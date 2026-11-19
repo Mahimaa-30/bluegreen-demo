@@ -17,7 +17,7 @@ def load_manifest(path=MANIFEST):
 def checkout(items, user=None, express=False):
     """Return the order total (100 per item)."""
     order = {"total": 100 * items}
-    if express:
+    if express and user in SAVED_CARDS:
         order["saved_card"] = SAVED_CARDS[user]
     return order
 
