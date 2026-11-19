@@ -1,5 +1,5 @@
 ﻿{
-    "live": "blue",
+    "live": "green",
     "environments": {
         "blue": {
             "port": 5001,
